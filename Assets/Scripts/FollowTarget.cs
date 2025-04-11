@@ -2,18 +2,16 @@ using UnityEngine;
 
 public class FollowTarget : MonoBehaviour
 {
-    public Transform target; // Arrastra aquí el Transform de tu Tanque
-    public Vector3 offset = new Vector3(-102.7f, 113.6f, 87f); // Ajusta para la posición deseada
+    public Transform target;         // El tanque
+    public Vector3 offset = new Vector3(-69, 76, -79);  // Ajustá para tu juego
+    public float smoothSpeed = 0.125f;              // Suavidad de seguimiento
 
-    void Update()
+    void LateUpdate()
     {
-        if (target != null)
-        {
-            transform.position = target.position + offset;
-        }
-        else
-        {
-            Debug.LogWarning("¡No se ha asignado ningún objetivo (Tanque) al script FollowTarget!");
-        }
+        Vector3 desiredPosition = target.position + target.rotation * offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
+
+        transform.LookAt(target);
     }
 }
