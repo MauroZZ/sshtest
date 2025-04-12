@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|c:\\users\\obeli\\onedrive\\documentos\\unity proyectos\\battle city tank 3d test\\assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|c:\\users\\obeli\\onedrive\\documentos\\unity proyectos\\battle city tank 3d test\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|c:\\users\\obeli\\onedrive\\documentos\\unity proyectos\\battle city tank 3d test\\assets\\scripts\\movimientotanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\assets\\scripts\\movimientotanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movimientotanque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T16:58:19.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MovimientoTanque.cs",
               "DocumentMoniker": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\MovimientoTanque.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovimientoTanque.cs",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "Assets\\Scripts\\MovimientoTanque.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T02:49:01.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T02:49:01.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
