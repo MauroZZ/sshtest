@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|c:\\users\\obeli\\onedrive\\documentos\\unity proyectos\\battle city tank 3d test\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FCC6306-64CE-04D1-3344-58246DD195B5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\obeli\\OneDrive\\Documentos\\unity proyectos\\battle City Tank 3D Test\\Assets\\Scripts\\CameraFollow.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T02:31:32.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
