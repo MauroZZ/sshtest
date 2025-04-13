@@ -9,12 +9,10 @@ public class CameraFollow : MonoBehaviour
 
     public float followSpeed = 10f;
     public float rotationSpeed = 20f;
-    // Aumentamos significativamente la velocidad de rotación vertical
-    public float verticalRotationSpeed = 500f; // Valor aumentado
+    public float verticalRotationSpeed = 500f;
     public float minVerticalAngle = -80f;
     public float maxVerticalAngle = 80f;
 
-    // Nueva variable para referenciar el Transform del tanque para su rotación
     public Transform tankTransform;
 
     float currentRotationY;
@@ -64,7 +62,6 @@ public class CameraFollow : MonoBehaviour
         transform.LookAt(target);
 
         // Rotar el tanque horizontalmente para que coincida con la rotación horizontal de la cámara
-        // Solo aplicamos la rotación en el eje Y para la rotación horizontal del tanque
         Quaternion tankRotationY = Quaternion.Euler(0f, currentRotationY, 0f);
         tankTransform.rotation = tankRotationY;
     }
