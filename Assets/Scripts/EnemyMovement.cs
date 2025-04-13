@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 5f; // Velocidad de movimiento del enemigo
-    public float rotationSpeed = 5f; // Velocidad de rotación del enemigo
+    public float speed = 30f; // Velocidad de movimiento del enemigo
+    public float rotationSpeed = 20f; // Velocidad de rotación del enemigo
     private Transform playerTarget; // Referencia a la posición del jugador
 
     // Start is called before the first frame update

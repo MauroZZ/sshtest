@@ -6,12 +6,14 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform target; // El objetivo al que la cámara sigue (el tanque)
     public Vector3 offset = new Vector3(0f, 5f, -30f);
+    public LayerMask collisionMask; // Máscara de capas para detectar las paredes
 
     public float followSpeed = 10f;
     public float rotationSpeed = 20f;
     public float verticalRotationSpeed = 500f;
     public float minVerticalAngle = -80f;
     public float maxVerticalAngle = 80f;
+    public float collisionOffset = 0.2f; // Pequeño offset para evitar que la cámara se meta justo en la pared
 
     public Transform tankTransform;
 
@@ -55,8 +57,17 @@ public class CameraFollow : MonoBehaviour
         // Calcular la posición deseada basada en la rotación combinada
         Vector3 desiredPosition = target.position + cameraRotation * offset;
 
-        // Mover cámara suavemente
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, followSpeed * Time.deltaTime);
+        // Realizar un Raycast desde la posición deseada hacia el objetivo
+        RaycastHit hit;
+        Vector3 finalPosition = desiredPosition;
+        if (Physics.Linecast(target.position, desiredPosition, out hit, collisionMask))
+        {
+            // Si el Raycast golpea algo (una pared), la posición final de la cámara será el punto de impacto
+            finalPosition = hit.point + hit.normal * collisionOffset;
+        }
+
+        // Mover cámara suavemente a la posición final (ya sea la deseada o la ajustada por colisión)
+        transform.position = Vector3.Lerp(transform.position, finalPosition, followSpeed * Time.deltaTime);
 
         // Mirar al objetivo (mantener la cámara apuntando al tanque)
         transform.LookAt(target);
