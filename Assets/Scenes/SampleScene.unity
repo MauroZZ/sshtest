@@ -756,6 +756,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
   m_Center: {x: 0, y: -0.00000023841858, z: 0}
+--- !u!1 &381920280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381920281}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381920281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381920280}
+  m_LocalRotation: {x: -0, y: -0.71022785, z: -0, w: 0.7039719}
+  m_LocalPosition: {x: -0.67200017, y: -0.0000019886256, z: -0.000043549764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487889941}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90.507, z: 0}
 --- !u!1 &434941959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1102,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.0000014305115}
+--- !u!1 &519056403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4698582976308570557, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
+  m_PrefabInstance: {fileID: 1625461376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &519056404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519056403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c3893329927c7d49b79548417c91d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1513166980202084632, guid: 95c1ffcf902cde9448d45277905e8829, type: 3}
+  spawn: {fileID: 381920281}
+  shotForce: 1500
+  shotRate: 0.5
 --- !u!1 &548651354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,6 +3167,11 @@ Transform:
   m_Father: {fileID: 1285656649}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1487889941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4698582977680178713, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
+  m_PrefabInstance: {fileID: 1625461376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1528281682
 GameObject:
   m_ObjectHideFlags: 0
