@@ -1,1 +1,1 @@
-ESTA VERSION AÑADE QUE EL TANQUE PUEDA DISPARAR
+Tanque se puede mover mejor, camara mejorada, y ahora los enemigos reaccionan a las balas

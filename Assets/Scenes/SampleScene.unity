@@ -884,30 +884,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
   m_Center: {x: 0, y: -0.00000023841858, z: 0}
---- !u!1 &440836438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4698582977652638575, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
-  m_PrefabInstance: {fileID: 1625461376}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &440836439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698582977652638480, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
   m_PrefabInstance: {fileID: 1625461376}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &440836445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440836438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51727ebe87f6fe14e9124f4eb6f9e85b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 20
-  turnSpeed: 50
 --- !u!1 &509955397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1104,22 @@ MonoBehaviour:
   spawn: {fileID: 381920281}
   shotForce: 1500
   shotRate: 0.5
+--- !u!114 &519056406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519056403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51727ebe87f6fe14e9124f4eb6f9e85b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  turnSpeed: 50
+  strafeSpeed: 15
+  cameraTransform: {fileID: 963194228}
 --- !u!1 &548651354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,10 +1131,10 @@ GameObject:
   - component: {fileID: 548651355}
   m_Layer: 0
   m_Name: spawner5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &548651355
 Transform:
@@ -2223,6 +2220,10 @@ MonoBehaviour:
   offset: {x: 0, y: 5, z: -30.48}
   followSpeed: 5
   rotationSpeed: 100
+  verticalRotationSpeed: 150
+  minVerticalAngle: -80
+  maxVerticalAngle: 80
+  tankTransform: {fileID: 0}
 --- !u!1 &997003196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,10 +3148,10 @@ GameObject:
   - component: {fileID: 1474707815}
   m_Layer: 0
   m_Name: spawner4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1474707815
 Transform:
@@ -3425,7 +3426,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4698582977652638486, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d732fb8d3e555714b82c0ed2e6af3141, type: 3}
 --- !u!1 &1740192138
 GameObject:
@@ -3438,7 +3440,7 @@ GameObject:
   - component: {fileID: 1740192139}
   m_Layer: 0
   m_Name: spawner3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3958,7 +3960,7 @@ GameObject:
   - component: {fileID: 1907048312}
   m_Layer: 0
   m_Name: spawner1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4046,7 +4048,7 @@ GameObject:
   - component: {fileID: 1954787181}
   m_Layer: 0
   m_Name: spawner2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
