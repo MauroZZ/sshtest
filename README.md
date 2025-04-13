@@ -1,1 +1,1 @@
-los enemigos ahora te siguen, y te disparan
+6.	Guardar un dato que registre la cantidad de objetivos destruidos en una variable puntuación que debe ser impresa en consola cada 3 segundos, además la variable debe ser leída e impresa una única vez cada vez que comience el juego mostrando la última puntuación obtenida (10 puntos) HECHO

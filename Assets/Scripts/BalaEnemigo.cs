@@ -45,12 +45,9 @@ public class BalaEnemigo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("BalaEnemigo collided with: " + collision.gameObject.name + " (Tag: " + collision.gameObject.tag + ")");
-
         // Verificar si el objeto con el que colisionamos tiene la etiqueta "Player"
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("¡Jugador alcanzado por BalaEnemigo!");
             // Aquí iría la lógica para aplicar daño al jugador (lo implementaremos después)
             Destroy(gameObject);
         }

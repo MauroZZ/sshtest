@@ -38,17 +38,11 @@ public class EnemyShooting : MonoBehaviour
         if (playerTarget != null && firePoint != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
-            Debug.Log($"Distancia al jugador: {distanceToPlayer}, Rango de disparo: {fireRange}, Tiempo para el próximo disparo: {nextFireTime - Time.time}");
 
             if (distanceToPlayer <= fireRange && Time.time >= nextFireTime)
             {
-                Debug.Log("¡Enemigo disparando!");
                 Shoot();
                 nextFireTime = Time.time + fireInterval; // Establece el tiempo para el próximo disparo
-            }
-            else
-            {
-                Debug.Log("Enemigo listo para disparar: " + (distanceToPlayer <= fireRange) + ", Tiempo de espera terminado: " + (Time.time >= nextFireTime));
             }
         }
     }
