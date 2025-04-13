@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float damage = 1f; // Puedes ajustar el daño si lo necesitas
+    public float damage = 1f;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -11,11 +11,9 @@ public class Bullet : MonoBehaviour
         // Verificar si el objeto con el que colisionamos tiene la etiqueta "Enemy"
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Enemy detected! Destroying: " + collision.gameObject.name);
+            Debug.Log("ENEMIGO DETECTADO:" + collision.gameObject.name);
             // Si colisiona con un enemigo, destruye el enemigo
             Destroy(collision.gameObject);
-
-            // Opcionalmente, puedes destruir la bala también al impactar
             Destroy(gameObject);
         }
     }

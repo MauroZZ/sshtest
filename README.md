@@ -1,1 +1,1 @@
-Tanque se puede mover mejor, camara mejorada, y ahora los enemigos reaccionan a las balas
+los enemigos ahora te siguen, y te disparan
